@@ -1,0 +1,36 @@
+.header {
+  position: absolute;
+  width: 100%;
+}
+
+#main_container {
+  background: url(../images/qbackgroundex.jpg) no-repeat;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+#brand img{
+  float: left;
+  padding: 14px 16px;
+}
+
+.navbar ul{
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+
+}
+
+#q_box {
+  position: relative;
+  top: 20%;
+  padding: 2%;
+  text-align: center;
+}
+input [type="text"]{
+  
+}
