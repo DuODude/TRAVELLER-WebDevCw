@@ -3,6 +3,7 @@
   font-family: Poppins, sans-serif;
   margin: 0 auto;
   box-sizing: border-box;
+  color: #242424;
 }
 
 .header {
@@ -13,11 +14,10 @@
 
 a {
   text-decoration: none;
-  color: #242424;
 }
 
 a:hover {
-  color: #61ff00;
+  color: #75FF20;
 }
 
 .navbar ul li  {
@@ -53,6 +53,9 @@ a:hover {
   background: #242424;
   padding: 40px;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
+}
+
+.footer span {
   color: #fff;
 }
