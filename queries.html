@@ -18,13 +18,14 @@
     <!-- Header-->
     <div class="header">
         <div id="brand">
-            <a href="#"><img src="images/LogoThick.png" alt="TRAVELLER" width="300px"></a>
+            <a href="https://w1809808.users.ecs.westminster.ac.uk/presentation_page.html"><img
+                    src="images/LogoThick.png" alt="TRAVELLER" width="300px"></a>
         </div>
         <div class="navbar">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="https://w1761343.users.ecs.westminster.ac.uk/index.html">Home</a></li>
                 <li><a href="#">Discover</a></li>
-                <li><a href="#">Store</a></li>
+                <li><a href="https://w1809808.users.ecs.westminster.ac.uk/store.html">Store</a></li>
                 <li><a href="#">Team</a></li>
                 <li><a href="#">Quiz</a></li>
                 <li><a href="#">Contact</a></li>
@@ -35,36 +36,46 @@
 
     <div id="main_container">
 
-        <div id="q_box">
 
-            <form name="qform" method="post">
+        <form id="qform" name="qform" method="post">
 
-                <label for="fname">Full Name:</label>
-                <br><input type="text" name="fname">
+            <label for="fname">Full Name:</label>
+            <br><input type="text" name="fname" value="">
 
-                <br><label for="email">Email Address:</label>
-                <br><input type="email" name="e_mail">
+            <br><label for="email">Email Address:</label>
+            <br><input type="email" name="eMail" value="">
 
-                <div class="radio_box">
-                    <label>Subject:
-                        <br><input type="radio" class="radio_item" name="theme" id="delivery" value="Delivery" />
+            <div class="radio_box">
+                <label>Subject:
+                    <center>
+                        <input type="radio" class="radio_item" name="theme" id="delivery" value="Delivery" />
                         <label for="delivery" class="radio_item">Delivery</label>
                         <input type="radio" class="radio_item" name="theme" id="comments" value="Comments" />
                         <label for="comments" class="radio_item">Comments</label>
                         <input type="radio" class="radio_item" id="other" name="theme" value="Other" />
                         <label for="other" class="radio_item">Other</label>
-                    </label>
-                </div>
+                    </center>
+                </label>
+            </div>
 
-                <label for="description">Description:</label>
-                <br><textarea name="description" cols="30" rows="4"></textarea>
-
-                <div class="btn">
-                    <input type="button" value="View Query" onclick="">
+            <label for="description">Description:</label>
+            <br><textarea name="description" cols="30" rows="4" value=""></textarea>
+            <div class="btn">
+                <center>
+                    <input type="button" value="View Query" onclick="checkInputs(preview_form);">
                     <input type="reset" value="Reset" onclick="">
-
+                </center>
+            </div>
+        </form>
+        <div id="preview_form">
+            <center>
+                <div id="form_content" style="text-align: justify;">
                 </div>
-            </form>
+                <div class="btns">
+                <input type="button" onclick="editform()" value="Edit">
+                <input type="button" onclick="sendform()" value="Send">
+            </div>
+            </center>
         </div>
 
         <div id="wordings">
@@ -74,20 +85,28 @@
             <span style="font-size: 0.7em;">There’s a spelling mistake? we know ;)</span>
 
             <div id="social">
-                <a href="#"><img src="images/social/facebook.svg" alt="facebook"></a>
-                <a href=" #"><img src="images/social/instagram.svg" alt="instagram"></a>
-                <a href="#"><img src="images/social/linkedIn.svg" alt="linkedIn"></a>
-                <a href="#"><img src="images/social/twitter.svg" alt="twitter"></a>
+                <a href="https://www.facebook.com/"><img src="images/social/facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/"><img src="images/social/instagram.png" alt="instagram"></a>
+                <a href="https://www.linkedin.com/"><img src="images/social/linkedIn.png" alt="linkedIn"></a>
+                <a href="https://twitter.com/"><img src="images/social/twitter.png" alt="twitter"></a>
             </div>
         </div>
 
     </div>
 
-    <!--  Footer  -->
+    <!-- Footer -->
     <div class="footer">
         <span>©2021 TRAVELLER. Many rights reserved.</span>
+        <div class="social">
+            Find Us on:
+            <a href="https://www.facebook.com/"><img src="images/social/facebookl.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/"><img src="images/social/instagraml.png" alt="instagram"></a>
+            <a href="https://www.linkedin.com/"><img src="images/social/linkedInl.png" alt="linkedIn"></a>
+            <a href="https://twitter.com/"><img src="images/social/twitterl.png" alt="twitter"></a>
+        </div>
     </div>
 
+    <script src="js/queries.js"></script>
 </body>
 
 </html>
