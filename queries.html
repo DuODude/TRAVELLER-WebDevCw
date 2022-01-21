@@ -18,14 +18,14 @@
     <!-- Header-->
     <div class="header">
         <div id="brand">
-            <a href="https://w1809808.users.ecs.westminster.ac.uk/presentation_page.html"><img
+            <a href="index.html"><img
                     src="images/LogoThick.png" alt="TRAVELLER" width="300px"></a>
         </div>
         <div class="navbar">
             <ul>
-                <li><a href="https://w1761343.users.ecs.westminster.ac.uk/index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="#">Discover</a></li>
-                <li><a href="https://w1809808.users.ecs.westminster.ac.uk/store.html">Store</a></li>
+                <li><a href="#">Store</a></li>
                 <li><a href="#">Team</a></li>
                 <li><a href="#">Quiz</a></li>
                 <li><a href="#">Contact</a></li>
@@ -37,7 +37,8 @@
     <div id="main_container">
 
 
-        <form id="qform" name="qform" method="post">
+        <form id="qform" name="qform" action="mailto:owin.2019412@iit.ac.lk?subject=MyQuery" method="post"
+            enctype="text/plain">
 
             <label for="fname">Full Name:</label>
             <br><input type="text" name="fname" value="">
@@ -62,8 +63,8 @@
             <br><textarea name="description" cols="30" rows="4" value=""></textarea>
             <div class="btn">
                 <center>
-                    <input type="button" value="View Query" onclick="checkInputs(preview_form);">
-                    <input type="reset" value="Reset" onclick="">
+                    <input type="button" value="View Query" onclick="checkInputs(previewForm);">
+                    <input type="reset" value="Reset">
                 </center>
             </div>
         </form>
@@ -72,9 +73,9 @@
                 <div id="form_content" style="text-align: justify;">
                 </div>
                 <div class="btns">
-                <input type="button" onclick="editform()" value="Edit">
-                <input type="button" onclick="sendform()" value="Send">
-            </div>
+                    <input type="button" onclick="editForm()" value="Edit">
+                    <input type="button" onclick="sendForm()" value="Send">
+                </div>
             </center>
         </div>
 
@@ -93,7 +94,7 @@
         </div>
 
     </div>
-
+    Made with ❤️ by: <a href="owin.html"><u>Owin Gunawardena</u></a>
     <!-- Footer -->
     <div class="footer">
         <span>©2021 TRAVELLER. Many rights reserved.</span>

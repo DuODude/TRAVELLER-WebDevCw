@@ -1,10 +1,4 @@
-function preview_form(fname, eMail, description, subject) {
-    document.getElementById("form_content").innerHTML = "<p>Name: <span>" + fname + "</span><br>Email Address: <span>" + eMail + "</span><br>Subject: <span>" + subject + "</span><br>Details: <div id='description'>" + description + "</div></p>";
-    document.getElementById("preview_form").style.display ="block";
-    document.forms["qform"].style.display = "none";
-}
-
-function checkInputs(preview_form) {
+function checkInputs(previewForm) {
     var fname = document.forms["qform"]["fname"].value;
     var eMail = document.forms["qform"]["eMail"].value;
     var description = document.forms["qform"]["description"].value;
@@ -22,6 +16,32 @@ function checkInputs(preview_form) {
         alert("Enter details of your query");
         description.focus();
     } else {
-        preview_form(fname, eMail, description, subject.value);
+        previewForm(fname, eMail, description, subject.value);
     }
+}
+
+function previewForm(fname, eMail, description, subject) {
+    document.getElementById("form_content").innerHTML =
+        "<p>Name: <span>" +
+        fname +
+        "</span><br>Email Address: <span>" +
+        eMail +
+        "</span><br>Subject: <span>" +
+        subject +
+        "</span><br>Details: <div id='description'>" +
+        description +
+        "</div></p>";
+    document.getElementById("preview_form").style.display = "block";
+    document.forms["qform"].style.display = "none";
+}
+
+function editForm() {
+    document.getElementById("preview_form").style.display = "none";
+    document.forms["qform"].style.display = "block";
+}
+
+function sendForm() {
+    document.getElementById("qform").submit();
+    alert("Thank you for your query! It is now on its way.");
+    location.reload();
 }
