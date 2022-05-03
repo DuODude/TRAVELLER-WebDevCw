@@ -1,3 +1,3 @@
 # TRAVELLER-WebDevCw
 
-Published URL: https://duodude.github.io/TRAVELLER-WebDevCw/
+Published URL: https://owinog.github.io/TRAVELLER-WebDevCw/
